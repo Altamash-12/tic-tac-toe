@@ -46,6 +46,7 @@ boxes.forEach((box) => {
     boxArray[e.target.id] = currentTurn;
 
     if (checkWinner(boxArray)) {
+      console.log("ayan");
       turnPlayer.textContent = `${currentTurn} won the game`;
     } else {
       currentTurn = currentTurn === "X" ? "O" : "X";
@@ -54,6 +55,16 @@ boxes.forEach((box) => {
   });
 });
 
+// resetBtn.addEventListener("click", function (e) {
+//   boxes.forEach((box) => {
+//     box.textContent = "";
+//     box.value = "";
+//     box.disabled = false;
+//   });
+//   currentTurn = "X";
+//   turnPlayer.textContent = "its X turn";
+//   isGameEnd = false;
+// });
 resetBtn.addEventListener("click", function (e) {
   boxes.forEach((box) => {
     box.textContent = "";
@@ -62,5 +73,6 @@ resetBtn.addEventListener("click", function (e) {
   });
   currentTurn = "X";
   turnPlayer.textContent = "its X turn";
-  isGameEnd = false;
+  boxArray = [null, null, null, null, null, null, null, null, null];
+  winner = "";
 });
