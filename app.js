@@ -55,16 +55,6 @@ boxes.forEach((box) => {
   });
 });
 
-// resetBtn.addEventListener("click", function (e) {
-//   boxes.forEach((box) => {
-//     box.textContent = "";
-//     box.value = "";
-//     box.disabled = false;
-//   });
-//   currentTurn = "X";
-//   turnPlayer.textContent = "its X turn";
-//   isGameEnd = false;
-// });
 resetBtn.addEventListener("click", function (e) {
   boxes.forEach((box) => {
     box.textContent = "";

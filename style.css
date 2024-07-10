@@ -51,3 +51,9 @@ body {
   color: #fff;
   background-color: #4f4e4e;
 }
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 40px;
+  }
+}
